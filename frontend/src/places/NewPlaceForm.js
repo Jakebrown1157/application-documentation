@@ -15,8 +15,7 @@ function NewPlaceForm() {
 
 	async function handleSubmit(e) {
 		e.preventDefault()
-
-		await fetch(`http://localhost:5000/places`, {
+		await fetch(`/places`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

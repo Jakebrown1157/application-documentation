@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { useHistory, useParams } from "react-router"
 
+
 function SignUpForm() {
 
 	const history = useHistory()
@@ -14,8 +15,8 @@ function SignUpForm() {
 
 	async function handleSubmit(e) {
 		e.preventDefault()
-
-		await fetch(`http://localhost:5000/users/`, {
+		
+		await fetch(`/users/`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
